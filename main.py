@@ -25,7 +25,7 @@ class Control(object):
         self.fps = 60.0
         self.keys = pg.key.get_pressed()
         self.done = False
-        self.level = level.LevelMap(SHEET,"bigtest.txt",self.screen_rect.copy())
+        self.level = level.LevelMap(SHEET,"sisyphus1.txt",self.screen_rect.copy())
         self.player = player.Player((50,self.level.rect.bottom-100),(21,15))
 
     def event_loop(self):
